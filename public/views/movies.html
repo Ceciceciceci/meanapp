@@ -18,8 +18,8 @@
     <tr ng-repeat="movie in movies">
       <td class="col-md-4 col-xs-4"><a ng-href="/#/movie/{{ movie._id }}">{{ movie.title }}</a></td>
       <td class="col-md-4 col-xs-4">{{ movie.url }}</td>
-      <td class="col-md-4 col-xs-4">
-        <div class="button-group" style="text-align: center; display:inline-block;">
+      <td class="col-md-4 col-xs-4" style="text-align: center; display:inline-block;">
+        <div class="button-group">
           <a ng-href="/#/movie/{{ movie._id }}/edit" class="btn btn-success">Edit
             <span class="glyphicon glyphicon-pencil"></span>
           </a>
