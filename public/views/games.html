@@ -3,17 +3,16 @@
 		<meta charset=utf-8>
 		<title>My first Three.js app</title>
 		<style>
-			body,html, snow {
-/*                1C1E1F*/
+			body, html, snowfall {
               background-color: #161616;
               height: 100%;
               width: 100%;
             }
 
-            .snow{
+            .snowfall{
                   height: 100%;
-  position: absolute;
-  width: 100%;
+/*                  position: absolute;*/
+                  width: 100%;
             }
 
 		</style>
@@ -23,25 +22,27 @@
             <source src="whitechristmas.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-                <canvas id="snow" class="snow"></canvas>
-        <br><br><br>
-                <center style="z-index:15;">
-                    <div class="cat">
-                        <div class="ear ear--left"></div>
-                        <div class="ear ear--right"></div>
-                        <div class="face">
-                            <div class="eye eye--left">
-                                <div class="eye-pupil"></div>
-                            </div>
-                            <div class="eye eye--right">
-                                <div class="eye-pupil"></div>
-                            </div>
-                            <div class="muzzle"></div>
-                        </div>
+        <canvas id="snowfall" class="snowfall"></canvas>
+<br><br><br>
+        <center style="z-index:15;">
+            <div class="cat">
+                <div class="ear ear--left"></div>
+                <div class="ear ear--right"></div>
+                <div class="face">
+                    <div class="eye eye--left">
+                        <div class="eye-pupil"></div>
                     </div>
-                </center>
-		<script>
-			var canvas = document.getElementById('snow'),
+                    <div class="eye eye--right">
+                        <div class="eye-pupil"></div>
+                    </div>
+                    <div class="muzzle"></div>
+                </div>
+            </div>
+        </center>
+
+        <!--for the snow-->
+        <script>
+			var canvas = document.getElementById('snowfall'),
                 ctx = canvas.getContext('2d'),
                 width = ctx.canvas.width = document.body.offsetWidth,
                 height = ctx.canvas.height = document.body.offsetHeight,
