@@ -4,3 +4,6 @@ module.exports = {
   '/games': require('./controllers/gamesController')
 };
 
+
+
+//var routes = REQUIRE('Express').Routes
