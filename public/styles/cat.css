@@ -39,7 +39,7 @@
 .ear--right {
   right: -7%;
   border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
-  transform: rotate(15deg);
+  transform: rotate(30deg);
 }
 .ear--right::before, .ear--right::after {
   left: 10%;
@@ -151,6 +151,7 @@
     transform: translate(0, 0);
   }
 }
+
 .eye--left .eye-pupil {
   right: 30%;
 }
