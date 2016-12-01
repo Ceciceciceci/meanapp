@@ -1,3 +1,6 @@
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <a class="btn btn-primary" href="/#/create/movie"><span class="glyphicon glyphicon-plus"></span> Create Movie</a>
 <br>
 <table class="table table-striped">
@@ -7,16 +10,17 @@
     <th>Operations</th>
   </tr></thead>
   <tbody>
+      
     <tr ng-repeat="movie in movies">
       <td><a ng-href="/#/movie/{{ movie._id }}">{{ movie.title }}</a></td>
       <td>{{ movie.url }}</td>
       <td>
         <div class="button-group">
-          <a ng-href="/#/movie/{{ movie._id }}/edit" class="btn btn-default">
-            <span class="glyphicon glyphicon-edit"></span>
+          <a ng-href="/#/movie/{{ movie._id }}/edit" class="btn btn-info">Edit
+            <span class="glyphicon glyphicon-pencil"></span>
           </a>
-          <a ng-href="/#/movie/{{ movie._id }}/delete" class="btn btn-danger">
-            <span class="glyphicon glyphicon-remove-circle"></span>
+          <a ng-href="/#/movie/{{ movie._id }}/delete" class="btn btn-danger">Delete
+            <span class="glyphicon glyphicon-remove"></span>
           </a>
         </div>
       </td>
