@@ -2,7 +2,7 @@
 module.exports = {
   '/movie': require('./controllers/movieController'),
   '/games': require('./controllers/gamesController'),
-  '/threeprac': require('./controllers/threepracController')
+  '/threeprac': require('./controllers/threepracsController')
 };
 
 
