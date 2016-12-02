@@ -31,6 +31,15 @@
 
         <!--for the snow-->
         <script>
+            window.addEventListener('load', function() {
+            var button = document.getElementById("pauseAudio");
+            button.addEventListener('click', function() {        
+                var player = document.getElementById("player");
+                    player.pause();
+                }, false);
+            }, false);
+       </script>
+        <script>
 			var canvas = document.getElementById('snowfall'),
                 ctx = canvas.getContext('2d'),
                 width = ctx.canvas.width = document.body.offsetWidth,
