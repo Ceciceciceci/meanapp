@@ -4,7 +4,7 @@ module.exports = function(app, route) {
   // Setup the controller for REST.
   var rest = restful.model(
     'threeprac',
-    app.models.three
+    app.models.threeprac
   ).methods(['get', 'put', 'post', 'delete']);
 
   // Register this endpoint with the application.

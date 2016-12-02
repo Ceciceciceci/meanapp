@@ -8,6 +8,5 @@
  * Controller of the clientApp
  */
 angular.module('clientApp')
-  .controller('GamesCtrl', function () {
-    ];
+  .controller('ThreepracCtrl', function () {
   });
