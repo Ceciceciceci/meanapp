@@ -50,10 +50,9 @@ angular
         templateUrl: 'views/games.html',
         controller: 'GamesCtrl',
       })
-      .when('/games', {
-        templateUrl: 'views/games.html',
-        controller: 'GamesCtrl',
-        controllerAs: 'games'
+      .when('/threeprac',{
+        templateUrl: 'views/threeprac.html',
+        controller: 'ThreepracCtrl'
       })
       .otherwise({
         redirectTo: '/'
@@ -70,6 +69,7 @@ angular
   .factory('Movie', function(MovieRestangular) {
     return MovieRestangular.service('movie');
   })
+  
 
   .directive('youtube', function(){
     return {
