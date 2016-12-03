@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var path = require('path');
 var _ = require('lodash');
+var three = require('three');
 
 // Create the application.
 var app = express();
