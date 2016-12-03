@@ -9,5 +9,4 @@
  */
 angular.module('clientApp')
   .controller('GamesCtrl', function () {
-    ];
   });
