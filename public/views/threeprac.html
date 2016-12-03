@@ -3,33 +3,23 @@
     <!--trying mo.js-->
     <script src="//cdn.jsdelivr.net/mojs/latest/mo.min.js"></script>
     <style>
-    body {
-      background: #3A0839;
-      padding: 42px 54px;
-    }
+        body, html {
+          padding: 0;
+        }
 
-    .elem {
-      width:         20px;
-      height:        20px;
-      border-radius: 50%;
-      background:    white;
-      margin-top:   -10px;
-      margin-left:  -10px;
-      position:      absolute;
-    }
+        body {
+          background: rgba(241, 226, 215, 0.2);
+        }
     </style>
 </head>
 
 <body>
-    <div class="elem" id="js-elem"></div>
     
-    <script>
-    
-    var burst = new Burst({
-        radius:   { 15: 50 }
-        children: {
-          fill:   [ 'deeppink', 'cyan', 'orange' ],
-      }
+    <script>s
+
+    var shape = new mojs.Shape({
+          shape: 'circle',
+          isShowStart: true
     });
     </script>
 </body>
