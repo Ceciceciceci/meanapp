@@ -1,19 +1,15 @@
 
 <head>
     <link rel="stylesheet" href="styles/threeprac.css">
+    <script src="js/threeprac.js"></script>
 </head>
 
 <body>
-    <div class="egg">
-      <div class="yolk">
-        <div class="face">
-          <div class="eyes"></div>
-          <div class="mouth"></div>
-        </div>
-      </div>
-    </div>
+    <audio id="mpthree" preload="auto">
+        <source src="ukulele.mp3" controls></source>
+    </audio>
     <canvas id="sky"></canvas>
-    <div class="egg2">
+    <div class="egg" value="PLAY" onclick="play()">
       <div class="yolk">
         <div class="face">
           <div class="eyes"></div>
@@ -21,4 +17,10 @@
         </div>
       </div>
     </div>
+    <script>
+      function play(){
+           var audio = document.getElementById("egg");
+           audio.play();
+      }
+   </script>
 </body>
