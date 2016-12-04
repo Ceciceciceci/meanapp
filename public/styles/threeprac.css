@@ -37,10 +37,10 @@ body,html{
     animation: wobble 8s linear infinite;
 }
 
-.egg .yolk {
+.egg .chicky {
     position: absolute;
     bottom: 20px;
-    left: 50%; /*center the yolk*/
+    left: 50%; /*center the chicky*/
     transform: translate(-50%, 0%);
     width: 130px;
     height: 130px;
@@ -48,7 +48,7 @@ body,html{
     border-radius: 100%;
 }
 
-.egg .yolk .face .eyes {
+.egg .chicky .face .eyes {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,8 +56,8 @@ body,html{
     display: flex;
 }
 
-.egg .yolk .face .eyes:before,
-.egg .yolk .face .eyes:after {
+.egg .chicky .face .eyes:before,
+.egg .chicky .face .eyes:after {
     display: block;
     content: '';
     width: 25px;
@@ -68,28 +68,27 @@ body,html{
     margin: 0 30px;
 }
 
-.egg .yolk .face .mouth {
+.egg .chicky .face .mouth {
     position: absolute;
     top: 75px;
     left: 50%;
     transform: translate(-50%, 0%);
     width: 40px;
     height: 20px;
-    background: #884E2C;
-    border-radius: 15px 15px 70px 70px;
+    background: #ea6a00;
+    border-radius: 90px 90px 80px 80px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
 }
 
-.egg .yolk .face .mouth:after {
+.egg .chicky .face .mouth:after {
     display: block;
     content: '';
-    width: 20px;
-    height: 8px;
-    background: #CD5B4D;
-    border-radius: 5px 5px 100% 100%;
-    margin-bottom: 2px;
+    width: 40px;
+    height: 9px;
+    background: #C75320;
+    border-radius: 1px 1px 90px 90px;
 }
 
 
