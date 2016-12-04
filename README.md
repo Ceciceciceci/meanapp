@@ -23,3 +23,13 @@ Sassan used on the Heroku site to check usability.
 Cecilia coded the video page and the random pages.
 Github shows the contributions.
 
+
+/MERRY CHRISTMAS/
+     *                                       
+    /.\                                      
+   /..'\                                     
+   /'.'\                                     
+  /.''.'\                                    
+  /.'.'.\                                    
+ /'.''.'.\                                   
+ ^^^[_]^^^ 
