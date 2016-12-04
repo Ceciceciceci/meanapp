@@ -20,6 +20,6 @@ wasn't too much focus on adding controllers and html pages.
 
 Brandon and Cecilia worked on making the application run on Heroku.
 Sassan used on the Heroku site to check usability.
-Cecilia did most of the pages.
+Cecilia coded the video page and the random pages.
 Github shows the contributions.
 
