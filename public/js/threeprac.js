@@ -1,3 +1,4 @@
+
 function Star(x, y, s) {
     this.x = x;
     this.y = y;

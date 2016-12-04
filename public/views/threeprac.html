@@ -5,22 +5,14 @@
 </head>
 
 <body>
-        <script>
-        function play(){
-           var audio = document.getElementById("#egg");
-           audio.play();
-        }
-        var audio = $(".audio")[0];
-        $("#egg")
-            .mouseenter(function() {
-                audio.play();
-            });
-   </script>
-    <audio id="audio" preload="auto">
-        <source src="ukulele.mp3" controls></source>
+
+    <audio id="audio">
+        <source src="ukulele.mp3"></source>
+<!--        <source src="ukulele.mp3" type="audio/mpeg"></source>-->
     </audio>
-    <canvas id="sky"></canvas>
-    <div class="egg">
+
+
+    <div class="egg" id="egg">
       <div class="chicky">
         <div class="face">
           <div class="eyes"></div>
@@ -28,5 +20,16 @@
         </div>
       </div>
     </div>
-
+    <canvas id="sky"></canvas>
+        <script>
+        $( document ).ready(function() {
+            var audio = $("audio")[0];
+            $("#egg").hover(function() {
+              audio.play();
+            },function(){
+              audio.pause();
+            });
+            
+        });
+    </script>
 </body>
