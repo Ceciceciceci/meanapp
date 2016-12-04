@@ -163,6 +163,10 @@ canvas{
     transform: rotate(-10deg);
 }
 
+.reindeer .tail{
+    
+}
+
 .reindeer:hover .head, .reindeer:hover .nose{
 	transform: rotate(90deg);
 	-moz-transform: rotate(90deg); 
@@ -200,4 +204,8 @@ canvas{
   50% {
     height: 1px;
   }
+}
+
+@keyframes wag{
+    
 }

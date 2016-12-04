@@ -43,8 +43,8 @@ function Sky(amount, min, max, fp) {
     this.a = amount;
     this.mi = min; // min star size
     this.ma = max; // max star size
-    this.fp = fp; // fall percent? I really didn't know what to call this
-    this.s = []; // stars array
+    this.fp = fp; // falling stars
+    this.s = []; // star arr
     for (var i = 0; i < amount; i++) {
         this.s.push(new Star(Math.random() * width, Math.random() * height, Math.random() * (max - min) + min));
     }
@@ -53,9 +53,8 @@ Sky.prototype = {
     constructor: Sky,
     update: function () {
         var f = false; // found a star to fall
-        // we use this so only one star per pass can fall 
         for (var i = 0; i < this.a; i++) {
-            this.s[i].update(); // update the stars position and alpha
+            this.s[i].update(); // update the stars position
             if (this.s[i].y > height) { // if the star is off screen reset it
                 this.s[i].a = 0;
                 this.s[i].x = Math.random() * width;
@@ -63,10 +62,9 @@ Sky.prototype = {
                 this.s[i].vx = 0;
                 this.s[i].vy = 0;
             }
-            if( f ) { // if a star has already fallen continue to the next star
+            if( f ) { // if a star has fallen continue find next star
                 continue;
             }
-            // if rand is less than the very small number and alpha is greater than 80% trigger a fall
             if( Math.random() < this.fp && this.s[i].a >= .8 ) { 
                 this.s[i].vx = Math.random() * 1 + 1;
                 this.s[i].vy = Math.random() * 2 + 8;
@@ -84,14 +82,12 @@ Sky.prototype = {
     }
 };
 var canvas, context, height, width, sky;
-// codepen bug, you need this otherwise height/width are messed up
 setTimeout(init, 10);
-// and the rest.
 function init() {
     canvas = document.getElementById('sky');
     context = canvas.getContext('2d');
     resize();
-    sky = new Sky(500, 1, 4, 1e-5 /* 0.00001 , this is that very small random chance value for the fall check */ );
+    sky = new Sky(500, 1, 4, 1e-5);
     update();
     render();
     window.onresize = resize;
