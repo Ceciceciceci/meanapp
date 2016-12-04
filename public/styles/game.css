@@ -6,6 +6,10 @@
   transition: all 100ms ease-in;
 }
 
+canvas{
+    border-bottom: 35px white;
+}
+
 .reindeer{
     z-index:1000;
 	width: 215px;
@@ -24,44 +28,22 @@
 	background: #b06e3c;
 	border-radius: 200px 190px 100px 360px;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	top: 0px;
 	right: 0px;
 	overflow: hidden;
     transform: rotate(75deg);
 }
-/*
-.reindeer .head:before, .reindeer .head:after{
-	content: '';
-	width: 184px;
-	height: 184px;
-	display: block;
-	background: #fff;
-	border-radius: 50%;
-	position: absolute;
-	z-index: 1;
-	bottom: -92px;
-}
-*/
-/*
-.reindeer .head:before{
-	left: -92px;
-}
-.reindeer .head:after{
-	right: -92px;
-}
-*/
+
 .reindeer .head .eye{
 	width: 30px;
 	height: 15px;
-/*	display: block;*/
 	background: #000;
     top: 75px;
 	right: 45px;
-/*    left: 25px;*/
     border-radius: 90px 90px 80px 80px;
 	position: absolute;
-	z-index: 2;
+	z-index: 4;
 	animation: blink 5s step-start 0s infinite;
     transform: rotate(90deg);
 }
@@ -97,24 +79,73 @@
 	background: #b06e3c;
 	border-radius: 50px 200px 50px 50px;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	top: 150px;
 	right: -100px;
 }
 .reindeer .leg1{
-	width: 50px;
+	width: 40px;
 	height: 150px;
 	display: block;
 	background: linear-gradient(to bottom, #b06e3c 60%,#c9a768 77%,#ffe6a8 91%,#1c1104 91%); 
 	border-radius: 214px 214px 360px 200px;
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
 	bottom: -100px;
 	right: -100px;
 	overflow: hidden;
     transform: rotate(0deg);
 }
 
+.reindeer .leg2{
+	width: 40px;
+	height: 150px;
+	display: block;
+	background: linear-gradient(to bottom, #b06e3c 60%,#c9a768 77%,#ffe6a8 91%,#1c1104 91%); 
+	border-radius: 214px 214px 360px 200px;
+	position: absolute;
+	z-index: 3;
+	bottom: -100px;
+	right: -40px;
+	overflow: hidden;
+    transform: rotate(0deg);
+}
+
+.reindeer .leg3{
+	width: 40px;
+	height: 150px;
+	display: block;
+	background: linear-gradient(to bottom, #b06e3c 30%, #c9a768 60%,#ffe6a8 77%,#fff3d8 91%,#351b0b 91%); 
+	border-radius: 214px 214px 360px 200px;
+	position: absolute;
+	z-index: 1;
+	bottom: -100px;
+	right: 20px;
+	overflow: hidden;
+    transform: rotate(10deg);
+}
+
+.reindeer .leg4{
+	width: 40px;
+	height: 150px;
+	display: block;
+	background: linear-gradient(to bottom, #b06e3c 30%, #c9a768 60%,#ffe6a8 77%,#fff3d8 91%,#351b0b 91%); 
+	border-radius: 214px 214px 360px 200px;
+	position: absolute;
+	z-index: 1;
+	bottom: -100px;
+	right: -50px;
+	overflow: hidden;
+    transform: rotate(10deg);
+}
+
+.reindeer .antlers{
+    z-index:1;
+    width:5px;
+    height: 100px;
+    display:block;
+    background: #eeece2;
+}
 
 .reindeer:hover .head, .reindeer:hover .nose{
 	transform: rotate(90deg);
