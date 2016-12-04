@@ -1,8 +1,8 @@
 body,html{
-  background: -webkit-linear-gradient(#00111e 39%, #033d5e);
-  background: -moz-linear-gradient(#00111e 30%, #033d5e);
-  background: -o-linear-gradient(#00111e 30%, #033d5e);
-  background: linear-gradient(#00111e 30%, #033d5e);
+    background: -webkit-linear-gradient(#00111e 39%, #033d5e);
+    background: -moz-linear-gradient(#00111e 30%, #033d5e);
+    background: -o-linear-gradient(#00111e 30%, #033d5e);
+    background: linear-gradient(#00111e 30%, #033d5e);
     height:100%;
     overflow: hidden;
 }
@@ -20,6 +20,7 @@ body,html{
     width: 200px;
     height: 250px;
     background: #FFF;
+    /*Shape the egg*/
     border-top-left-radius: 50% 60%;
     border-top-right-radius: 50% 60%;
     border-bottom-left-radius: 50% 40%;
@@ -30,39 +31,38 @@ body,html{
 }
 
 .egg:hover{
-        animation: wobble 8s linear infinite;
+    animation: wobble 8s linear infinite;
 }
 
 .egg .yolk {
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 50%; /*center the yolk*/
     transform: translate(-50%, 0%);
     width: 130px;
     height: 130px;
     background: #FFDF50;
     border-radius: 100%;
-/*    box-shadow: inset -5px -5px #F1AD41;*/
 }
 
 .egg .yolk .face .eyes {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
 }
 
 .egg .yolk .face .eyes:before,
 .egg .yolk .face .eyes:after {
-  display: block;
-  content: '';
-  width: 25px;
-  height: 12px;
-  background: #884E2C;
-  border-radius: 100%;
+    display: block;
+    content: '';
+    width: 25px;
+    height: 12px;
+    background: #884E2C;
+    border-radius: 100%;
     animation: blink 4s infinite ease-in;
-  margin: 0 30px;
+    margin: 0 30px;
 }
 
 .egg .yolk .face .mouth {
