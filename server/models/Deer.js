@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 // Create the MovieSchema.
-var GameSchema = new mongoose.Schema({
+var DeerSchema = new mongoose.Schema({
   user: {
     type: String,
     required: true
@@ -13,4 +13,4 @@ var GameSchema = new mongoose.Schema({
 });
 
 // Export the model schema.
-module.exports = GameSchema;
+module.exports = DeerSchema;
