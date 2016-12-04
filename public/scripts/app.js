@@ -46,9 +46,9 @@ angular
         templateUrl: 'views/movie-edit.html',
         controller: 'MovieEditCtrl',
       })
-      .when('/games', {
-        templateUrl: 'views/games.html',
-        controller: 'GamesCtrl',
+      .when('/deers', {
+        templateUrl: 'views/deers.html',
+        controller: 'DeersCtrl',
       })
       .when('/threeprac',{
         templateUrl: 'views/threeprac.html',

@@ -144,13 +144,39 @@ canvas{
     width:5px;
     height: 100px;
     display:block;
+    top:-20px;
+    right:70px;
+    position:absolute;
     background: #eeece2;
+    transform: rotate(-10deg);
+}
+
+.reindeer .antlers2{
+    z-index:1;
+    width:5px;
+    height: 100px;
+    display:block;
+    top:-20px;
+    right:80px;
+    position:absolute;
+    background: #eeece2;
+    transform: rotate(-10deg);
 }
 
 .reindeer:hover .head, .reindeer:hover .nose{
 	transform: rotate(90deg);
 	-moz-transform: rotate(90deg); 
 	-webkit-transform: rotate(90deg); 
+}
+
+.reindeer:hover .antlers{
+    transform: rotate(15deg);
+    right: 50px;
+}
+
+.reindeer:hover .antlers2{
+    transform: rotate(15deg);
+    right: 60px;
 }
 
 .reindeer:hover .ear{
