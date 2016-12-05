@@ -18,7 +18,3 @@ All CSS and Javascript is pure.
 Yeoman was used to make most of the template files, so that it was easier
 to add controllers and html pages.
 
-Brandon and Cecilia worked on making the application run on Heroku.
-Sassan used on the Heroku site to check usability.
-Github shows the contributions.
-
