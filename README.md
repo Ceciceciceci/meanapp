@@ -10,7 +10,7 @@ There is audio running in the background on two of them.
 
 <b> Links </b>
 You can run this application by going to this Heroku link:
-https://afternoon-caverns-60170.herokuapp.com/
+https://floating-fjord-65382.herokuapp.com/
 
 <b> How to run application</b>
 If you want to run this app locally, make sure to have mongodb running
