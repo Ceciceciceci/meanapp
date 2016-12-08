@@ -143,7 +143,6 @@ canvas{
     z-index:1;
     width:5px;
     height: 100px;
-    border-radius: 214px 214px 15px 15px;
     display:block;
     top:-20px;
     right:70px;
@@ -156,7 +155,6 @@ canvas{
     z-index:1;
     width:5px;
     height: 100px;
-        border-radius: 214px 214px 15px 15px;
     display:block;
     top:-20px;
     right:80px;

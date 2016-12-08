@@ -20,9 +20,9 @@
 
 		</style>
 	</head>
-	<body>
-        <audio controls hidden>
-            <source src="whitechristmas.mp3" type="audio/mpeg">
+	<body>        
+        <audio id="audio">
+        <source src="whitechristmas.mp3"></source>
         </audio>
         <canvas id="snowfall" class="snowfall"></canvas>
 
@@ -42,9 +42,20 @@
             <div class="leg1"></div>
             <div class="leg2"></div>
         </div>
-        <p>Merry Christmas! - from the Baby Reindeer</p>
+        <hr>
+        
+        <b>By:</b><br>
+        Brandon<br>
+        Cecilia<br>
+        Sassan<br><br>
+        Merry Christmas from the baby deer.<br>
+        All graphics made purely of CSS.
+        
+
         <!--for the snow-->
         <script>
+            var audio = $("audio")[0];
+            audio.play();
             window.addEventListener('load', function() {
             var button = document.getElementById("pauseAudio");
             button.addEventListener('click', function() {        

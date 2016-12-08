@@ -30,19 +30,19 @@ app.get('/', function(req, res){
 // Connect to MongoDB
 mongoose.Promise = global.Promise;
 //mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect("mongodb://localhost/meanapp");
+ mongoose.connect("mongodb://localhost/meanapp");
 mongoose.connection.once('open', function() {
 
-// Load the models.
-app.models = require('./server/models/index');
+  // Load the models.
+  app.models = require('./server/models/index');
 
-// Load the routes.
-var routes = require('./server/routes');
-_.each(routes, function(controller, route) {
-console.log("configuring route: " + route);
-app.use(route, controller(app, route));
-});
+  // Load the routes.
+  var routes = require('./server/routes');
+  _.each(routes, function(controller, route) {
+    console.log("configuring route: " + route);
+    app.use(route, controller(app, route));
+  });
 
-console.log('Listening on port ' + process.env.PORT ? process.env.PORT : 3000);
-app.listen(process.env.PORT || 3000);
+  console.log('Listening on port ' + process.env.PORT ? process.env.PORT : 3000);
+  app.listen(process.env.PORT || 3000);
 });

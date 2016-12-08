@@ -46,6 +46,28 @@ angular
         templateUrl: 'views/movie-edit.html',
         controller: 'MovieEditCtrl',
       })
+    
+      .when('/images', {
+        templateUrl: 'views/images.html',
+        controller: 'ImagesCtrl',
+      })
+      .when('/create/image', {
+        templateUrl: 'views/image-add.html',
+        controller: 'ImageAddCtrl',
+      })
+      .when('/image/:id', {
+        templateUrl: 'views/image-view.html',
+        controller: 'ImageViewCtrl',
+      })
+      .when('/image/:id/delete', {
+        templateUrl: 'views/image-delete.html',
+        controller: 'ImageDeleteCtrl',
+      })
+      .when('/image/:id/edit', {
+        templateUrl: 'views/image-edit.html',
+        controller: 'ImageEditCtrl',
+      })
+    
       .when('/deers', {
         templateUrl: 'views/deers.html',
         controller: 'DeersCtrl',
@@ -68,6 +90,17 @@ angular
   })
   .factory('Movie', function(MovieRestangular) {
     return MovieRestangular.service('movie');
+  })
+
+  .factory('ImageRestangular', function(Restangular) {
+    return Restangular.withConfig(function(RestangularConfigurer) {
+      RestangularConfigurer.setRestangularFields({
+        id: '_id'
+      });
+    });
+  })
+  .factory('Image', function(ImageRestangular) {
+    return ImageRestangular.service('image');
   })
   
 

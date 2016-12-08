@@ -1,4 +1,5 @@
 body,html{
+
     background: -webkit-linear-gradient(#00111e 39%, #033d5e);
     background: -moz-linear-gradient(#00111e 30%, #033d5e);
     background: -o-linear-gradient(#00111e 30%, #033d5e);
@@ -12,12 +13,11 @@ body,html{
     z-index:5;
     overflow:hidden;
     width:100%;
-    border:1px solid white;
 }
 
 .egg {
     position: fixed;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
