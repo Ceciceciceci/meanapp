@@ -3,7 +3,7 @@ module.exports = function(app, route) {
 
   // Setup the controller for REST.
   var rest = restful.model(
-    'deer',
+    'movie',
     app.models.movie
   ).methods(['get', 'put', 'post', 'delete']);
 
