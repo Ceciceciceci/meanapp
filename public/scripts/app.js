@@ -76,6 +76,10 @@ angular
         templateUrl: 'views/threeprac.html',
         controller: 'ThreepracCtrl'
       })
+      .when('/contact',{
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

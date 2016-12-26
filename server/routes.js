@@ -1,9 +1,9 @@
-//assign movie controller to that model
 module.exports = {
   '/movie': require('./controllers/movieController'),
   '/deers': require('./controllers/deersController'),
-  '/image': require('./controllers/imageController')
-    
+  '/image': require('./controllers/imageController'),
+  '/threeprac': require('./controllers/threepracController'),
+  '/contact': require('./controllers/contactController')
 };
 
 

@@ -1,71 +1,33 @@
 
 <head>
         <link rel="stylesheet" href="styles/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <style>
+        p{
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+    </style>
 </head>
 
- <!-- Modal -->
-  <div class="modal fade" 
-       data-controls-modal="your_div_id" 
-       data-backdrop="static" 
-       data-keyboard="false"  id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Are you human?</h4>
-        </div>
-        <div class="modal-body">
-          <p>Click ok if you are.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">OKKKKKKK!</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
 
 <body>
     <!--REST OF WEBSITE-->
-    <h3 style="color:white;">What is this site?</h3>
-    <br>
-    <p style="color:grey;">This site allows people to bookmark their favorite videos and images and view them right on the page! Any user may contribute to this page at the moment. More features coming soon! </p>
-    <div style="color:#FFDF50;">
-        
-        <br><center>HOVER OVER ME!!!</center></div></p>
-    <link rel="stylesheet" href="styles/threeprac.css">
-    <script src="js/threeprac.js"></script>
-    <canvas id="sky"></canvas>
-    
-    <audio id="audio">
-        <source src="ukulele.mp3"></source>
-    </audio>
-    <div class="egg" id="egg">
-      <div class="chicky">
-        <div class="face">
-          <div class="eyes"></div>
-          <div class="mouth"></div>
-        </div>
-      </div>
+    <div>
+     <center><img src="images/alicecookie.gif" alt="Alice Cooking" style="width:400px;height:400px; z-index:100;">
+     <p>All Art (c) Cecilia Tran</p></center>
     </div>
     
-    <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $('#myModal').modal('show');
-        });
-    </script>
-        <script>
-        $( document ).ready(function() {
-            var audio = $("audio")[0];
-            $("#egg").hover(function() {
-              audio.play();
-            },function(){
-              audio.pause();
-            });
-            
-        });
-    </script>
+    <section id="aboutme" style="height:350px; padding-top:25px;">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" style="height:350px; padding-top:25px;">
+        <div class="container">
+            <div class="row">
+            </div>
+        </div>
+    </section>
 </body>

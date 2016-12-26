@@ -9,7 +9,18 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <!-- endbuild -->
+      
+    <style>
+        .center-pills{
+            display:inline-block;  
+        }
+        li{
+            font-size:15px;
+        }
+    </style>  
   </head>
   <body ng-app="clientApp" style="width:100% height:100%;">
       
@@ -17,13 +28,22 @@
       
     <div class="container" style="padding-top:20px;">
       <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li><a ng-href="#/">Home</a></li>
-          <li><a ng-href="#/movies">Videos</a></li>
+        <center><h1 style="font-family: 'Amatic SC', cursive; font-size:72px;"><a ng-href="#/" style="text-decoration: none;">Cherché Pour Cecile</a></h1>
+        <ul class="nav nav-pills center-pills" style="font-family: 'Amatic SC', cursive; font-size:20px;">
+<!--          <li><a ng-href="#/movies">Videos</a></li>-->
           <li><a ng-href="#/images">Images</a></li>
-          <li><a ng-href="#/deers">About Us</a></li>
+          <li role="presentation" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="">
+              Projects<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a ng-href="#/threeprac">Random 2</a></li>
+              <li><a ng-href="#/deers">Random 3</a></li>
+            </ul>
+          </li>
+          <li><a ng-href="#/contact">Contact</a></li>
         </ul>
-        <h3 class="text-muted">MediaBook</h3>
+        </center>
       </div>
 
       <div ng-view=""></div>
@@ -53,6 +73,7 @@
     <script src="scripts/controllers/image-delete.js"></script>
     <script src="scripts/controllers/image-edit.js"></script>  
       
+    <script src="scripts/controllers/contact.js"></script>  
     <script src="scripts/controllers/games.js"></script>
     <script src="scripts/controllers/threeprac.js"></script>
 </body>
