@@ -3,7 +3,8 @@ module.exports = {
   '/deers': require('./controllers/deersController'),
   '/image': require('./controllers/imageController'),
   '/threeprac': require('./controllers/threepracController'),
-  '/contact': require('./controllers/contactController')
+  '/contact': require('./controllers/contactController'),
+  '/project': require('./controllers/projectController')
 };
 
 
