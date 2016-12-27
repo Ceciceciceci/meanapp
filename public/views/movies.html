@@ -1,4 +1,4 @@
-d    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/copy.js"></script>
 <style>
@@ -11,9 +11,9 @@ d    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min
 <input class="col-md-12" style="padding:11px;" type="text" ng-model="search" placeholder="Search"/> 
 <table class="table table-striped">
   <thead>
-    <tr><th>Title</th>
-    <th>URL</th>
-    <th>Copy/Edit/Delete</th>
+    <tr><th>Name</th>
+    <th>Comment</th>
+    <th>Copy</th>
   </tr></thead>
   <tbody> 
     <tr ng-repeat="movie in movies | filter:search | limitTo:-100 | orderBy:'time':true">
@@ -30,9 +30,11 @@ d    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min
             var clipboard = new Clipboard('.btn');
             </script>
 
+<!--
             <a ng-href="/#/movie/{{ movie._id }}/edit" class="btn btn-success col-md-4 col-xs-12">Edit</a>
 
             <a ng-href="/#/movie/{{ movie._id }}/delete" class="btn btn-danger col-md-4 col-xs-12">Delete</a>
+-->
         </div>
       </td>
     </tr>

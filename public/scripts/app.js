@@ -77,12 +77,16 @@ angular
         controller: 'ThreepracCtrl'
       })
       .when('/contact',{
-        templateUrl: 'views/project.html',
+        templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
       .when('/project',{
-        templateUrl: 'views/projects.html',
+        templateUrl: 'views/project.html',
         controller: 'ProjectCtrl'
+      })
+      .when('/about',{
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl'
       })
       .otherwise({
         redirectTo: '/'
