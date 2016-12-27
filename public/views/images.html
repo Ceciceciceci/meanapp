@@ -1,6 +1,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>-->
 <script src="js/copy.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <style>
 <style>
 /*
     .darkred{
@@ -40,9 +43,81 @@
         text-align: center;
     }
 */
+body { 
+  margin: 0; 
+}
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+div#masonry { 
+  display: flex; 
+  flex-direction: column; 
+  flex-wrap: wrap;
+/*  height: 100vw;*/
+  max-height: 800px;
+  font-size: 0;  
+  width: 100vw;
+/*   overflow-y: hidden;*/
+  overflow-x: scroll;
+}
+div#masonry img {  
+  width: 33.3%;
+  transition: .8s opacity;
+} 
+
+div#masonry:hover img 
+{ 
+    opacity: 0.3; 
+}
+    
+div#masonry:hover img:hover 
+{ 
+    opacity: 1; 
+    
+} 
+    
+/*SCROLLBAR*/
+    
+div.image-slidebar{
+/*    overflow-y: hidden;*/
+/*    overflow-x: scroll;*/
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+/* actual bar */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #bebebe;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background:  rgba(132, 181, 44, 0.3); 
+}  
 </style>
 
-<center style="font-size: 72px;">UNDER CONSTRUCTION</center>
+  <body>
+        <br>
+        <center><p>Scroll to the right.</p></center>
+        <br>
+        <div class="image-slidebar" id="masonry">
+            <img src="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/a48b9d38fc51d2959b7242d9b5500737/tumblr_ogyuq4unGS1qczc4to3_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/b87545a2217fa233702baf12814f426f/tumblr_o4006yOEra1qczc4to1_540.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/898cb43264d9bac1fcf154acde10f01f/tumblr_ogi010qk1M1qczc4to1_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/f20a166911108bd52f09261c8b3ca01c/tumblr_ogyu87ZB7T1qczc4to1_540.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/5d4647e009502fe58690aed37e1d4caa/tumblr_ogyu87ZB7T1qczc4to4_400.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/fc411204d25454e3a75a2d89478c970a/tumblr_o3avox0LU01qczc4to1_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/70cc46bc0030cac29557ea4eeccd1dd0/tumblr_o4nufms9sT1vpcwvyo1_1280.png" style="height:; width:;">
+            <img src="https://68.media.tumblr.com/7d104c7e9a78695d502774439903c1b7/tumblr_o4omfr5EdF1vpcwvyo1_1280.png" style="height:; width:;">
+        </div>
+  </body>
 
 <!--
 <a class="btn btn-warning" href="/#/create/image"><span class="glyphicon glyphicon-plus"></span> Add Image</a>
