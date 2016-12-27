@@ -1,6 +1,95 @@
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <style>
+        p{
+            font-family: 'Open Sans Condensed', sans-serif;
+        }
+        li{
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 15px;
+        }
+        h3{
+            font-family: 'Amatic SC', cursive; 
+        }
+    </style>
+    
+    <!--FOR PROJECTS TABS-->
+    <script>
+    $(document).ready(function () {
+        $('.dived').hide();
+        $('.expander').click(function () {
+            // .parent() selects the A tag, .next() selects the P tag
+            $(this).parent().next().slideToggle(200);
+        });
+        $('.dived').slideUp(200);
+    });
+
+    $(".submit").prop('value', 'SAVE');
+
+    </script>
 </head>
 
 <body>
+    <br>
+    <br>
+    <ul class="nav nav-tabs nav-justified">
+        <li class="active">
+            <a id="tabs" data-toggle="tab" data-target="#proj1">Rentennial</a>
+        </li>
+        <li>
+            <a id="tabs" data-toggle="tab" data-target="#proj2">MySJSU Class Reg</a>
+        </li>
+        <li>
+            <a id="tabs" data-toggle="tab" data-target="#proj3">Techeria</a>
+        </li>
+        <li>
+            <a id="tabs" data-toggle="tab" data-target="#proj4">Artbooks</a>
+        </li>
+        <li>
+            <a id="tabs" data-toggle="tab" data-target="#other">Github links</a>
+        </li>
+    </ul>
+    
+   <!--Projects start-->
+    <div class ="tab-content">
+        <div class="tab-pane fade in active" id="proj1">
+            <div class="container">
+                <div class="row">
+                    <h3>Project 1</h3>
+                </div>
+            </div>
+        </div>
 
+        <div class="tab-pane fade" id="proj2">
+            <div class="container">
+                <div class="row">
+                    <h3>Project 2</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="proj3">
+            <div class="container">
+                <div class="row">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="proj4">
+            <div class="container">
+                <div class="row">
+                    <h3>Project 4</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="other">
+            <div class="container">
+                <div class="row">
+                    <h3>Other</h3>
+                </div>
+            </div>
+        </div>
+    </div><!--Tab content stop-->
 </body>
