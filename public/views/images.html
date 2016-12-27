@@ -49,42 +49,46 @@ body {
 p{
     font-family: 'Open Sans Condensed', sans-serif;
 }
-div#masonry { 
-  display: flex; 
-  flex-direction: column; 
-  flex-wrap: wrap;
-/*  height: 100vw;*/
-  max-height: 800px;
-  font-size: 0;  
-  width: 100vw;
-/*   overflow-y: hidden;*/
-  overflow-x: scroll;
-}
-div#masonry img {  
-  width: 33.3%;
-  transition: .8s opacity;
-} 
 
-div#masonry:hover img 
-{ 
-    opacity: 0.3; 
-}
-    
-div#masonry:hover img:hover 
-{ 
-    opacity: 1; 
-} 
+#grid {
 
-img:hover{
-  transform: scale(2);
+    line-height: 0;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+
 }
-    
+#grid img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 10px;
+}
+
+#grid a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+
+    #grid {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    }
+}
+@media (max-width: 320px) {
+    #grid {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    }
+}
+
 /*SCROLLBAR*/
     
-div.image-slidebar{
-/*    overflow-y: hidden;*/
-/*    overflow-x: scroll;*/
-}
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -107,10 +111,15 @@ div.image-slidebar{
         <br>
         <center><p>Scroll to the right if using web.</p></center>
         <br>
-        <div class="image-slidebar" id="masonry">
-            <img src="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png" style="height:; width:;">
-            <img src="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" style="height:; width:;">
-            <img src="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png" style="height:; width:;">
+        <div class="image-slidebar" id="grid">
+            <a href="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png"></a>
+
+            <a href="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png"></a>
+
+            <a href="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png"></a>
+            
+
+<!--
             <img src="https://68.media.tumblr.com/a48b9d38fc51d2959b7242d9b5500737/tumblr_ogyuq4unGS1qczc4to3_1280.png" style="height:; width:;">
             <img src="https://68.media.tumblr.com/b87545a2217fa233702baf12814f426f/tumblr_o4006yOEra1qczc4to1_540.png" style="height:; width:;">
             <img src="https://68.media.tumblr.com/898cb43264d9bac1fcf154acde10f01f/tumblr_ogi010qk1M1qczc4to1_1280.png" style="height:; width:;">
@@ -119,6 +128,7 @@ div.image-slidebar{
             <img src="https://68.media.tumblr.com/fc411204d25454e3a75a2d89478c970a/tumblr_o3avox0LU01qczc4to1_1280.png" style="height:; width:;">
             <img src="https://68.media.tumblr.com/70cc46bc0030cac29557ea4eeccd1dd0/tumblr_o4nufms9sT1vpcwvyo1_1280.png" style="height:; width:;">
             <img src="https://68.media.tumblr.com/7d104c7e9a78695d502774439903c1b7/tumblr_o4omfr5EdF1vpcwvyo1_1280.png" style="height:; width:;">
+-->
         </div>
   </body>
 
