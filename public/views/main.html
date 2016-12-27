@@ -71,32 +71,11 @@
           to{ bottom:0; opacity:1 }
         }
     </style>
-    
-    <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 3000);
-        }
-
-        function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("alice").style.display = "block";
-        }
-    </script>
 </head>
 
 
-<body onload="myFunction()">
-    <!--REST OF WEBSITE-->
-<!--
-    <div id="loader"></div>
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-      <h2>Tada!</h2>
-      <p>Some text in my newly loaded page..</p>
-    </div>
--->
-    <div id="alice">
+<body>
+    <div class="col-md-12 col-xs-12" id="alice">
          <center><img src="images/alicecookie.gif" alt="Alice Cooking" style="width:400px;height:400px; z-index:100;">
          <p>All Art (c) Cecilia Tran</p></center>
     </div>
