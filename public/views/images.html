@@ -1,11 +1,10 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<link href="styles/lightbox.css" rel="stylesheet" />
-<script src="js/lightbox.js"></script>
+<link href="styles/style1.css" rel="stylesheet" />
+<script src="js/modernizr-custom.js"></script>
+<!--<script src="js/lightbox.js"></script>-->
 <!--<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>-->
-<script src="js/copy.js"></script>
+<!--<script src="js/copy.js"></script>-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <style>
 <style>
 body { 
   margin: 0; 
@@ -14,43 +13,7 @@ p{
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#grid {
-
-    line-height: 0;
-    -webkit-column-count: 3;
-    -webkit-column-gap: 10px;
-    -moz-column-count: 3;
-    -moz-column-gap: 10px;
-    column-count: 3;
-    column-gap: 10px;
-
-}
-#grid img {
-    width: 100% !important;
-    height: auto !important;
-    margin-bottom: 10px;
-}
-
-#grid a:hover {
-    opacity: 0.9;
-}
-
-@media (max-width: 480px) {
-
-    #grid {
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
-    }
-}
-@media (max-width: 320px) {
-    #grid {
-    -moz-column-count: 1;
-    -webkit-column-count: 1;
-    column-count: 1;
-    }
-}
-
+        
 /*SCROLLBAR*/
     
 ::-webkit-scrollbar {
@@ -71,46 +34,152 @@ p{
 }  
 </style>
 
-  <body>
+  <body class="demo-1">
         <br>
         <br>
+
+<!--
         <div class="image-slidebar" id="grid">
             <a href="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png"></a>
 
-            <a href="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png"></a>
+            <a href="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" rel="lightbox" title="2016: Original character."><img src="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png"></a>
 
             <a href="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png"></a>
             <a href="https://68.media.tumblr.com/a48b9d38fc51d2959b7242d9b5500737/tumblr_ogyuq4unGS1qczc4to3_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/a48b9d38fc51d2959b7242d9b5500737/tumblr_ogyuq4unGS1qczc4to3_1280.png"></a>
             <a href="https://68.media.tumblr.com/b87545a2217fa233702baf12814f426f/tumblr_o4006yOEra1qczc4to1_540.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/b87545a2217fa233702baf12814f426f/tumblr_o4006yOEra1qczc4to1_540.png"></a>
             <a href="https://68.media.tumblr.com/898cb43264d9bac1fcf154acde10f01f/tumblr_ogi010qk1M1qczc4to1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/898cb43264d9bac1fcf154acde10f01f/tumblr_ogi010qk1M1qczc4to1_1280.png"></a>
             <a href="https://68.media.tumblr.com/5d4647e009502fe58690aed37e1d4caa/tumblr_ogyu87ZB7T1qczc4to4_400.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/5d4647e009502fe58690aed37e1d4caa/tumblr_ogyu87ZB7T1qczc4to4_400.png"></a>
+            
+            <a href="images/d1.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d1.png"></a>
+            <a href="images/d2.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d2.png"></a>
+            <a href="images/d3.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d3.png"></a>
+            <a href="images/d4.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d4.png"></a>
+            <a href="images/d5.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d5.png"></a>
+            <a href="images/d6.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d6.png"></a>
+            <a href="images/d7.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d7.png"></a>
+            <a href="images/d8.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d8.png"></a>
+            <a href="images/d9.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/d9.png"></a>
+            <a href="images/galaxypancakes.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/galaxypancakes.png"></a>
+            <a href="images/moonwater.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/moonwater.png"></a>
+            <a href="images/suntea.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="images/suntea.png"></a>
+            
             <a href="https://68.media.tumblr.com/fc411204d25454e3a75a2d89478c970a/tumblr_o3avox0LU01qczc4to1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/fc411204d25454e3a75a2d89478c970a/tumblr_o3avox0LU01qczc4to1_1280.png"></a>
             <a href="https://68.media.tumblr.com/70cc46bc0030cac29557ea4eeccd1dd0/tumblr_o4nufms9sT1vpcwvyo1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/70cc46bc0030cac29557ea4eeccd1dd0/tumblr_o4nufms9sT1vpcwvyo1_1280.png"></a>
+            <a href="https://68.media.tumblr.com/b9265d4be55ed2a9e0893095f1b32aab/tumblr_o5rjvl3yKx1vpcwvyo1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/b9265d4be55ed2a9e0893095f1b32aab/tumblr_o5rjvl3yKx1vpcwvyo1_1280.png"></a>
             <a href="https://68.media.tumblr.com/7d104c7e9a78695d502774439903c1b7/tumblr_o4omfr5EdF1vpcwvyo1_1280.png" rel="lightbox" title="2016: Fanart of Saber from Fate/Zero."><img src="https://68.media.tumblr.com/7d104c7e9a78695d502774439903c1b7/tumblr_o4omfr5EdF1vpcwvyo1_1280.png"></a>
 
         </div>
+-->
+      
+    <div class="container">
+		<div class="content">
+			<div class="grid">
+				<div class="grid__item" data-size="500x500">
+					<a href="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" class="img-wrap"><img src="https://68.media.tumblr.com/dd282c67b5222b5073e8d037869a4f09/tumblr_oim479slIl1qczc4to2_1280.png" alt="img01" />
+                        <div class="description description--grid">2016: Original character: Rose Earl Grey</div>
+                    </a>
+                </div>  
+                <div class="grid__item" data-size="500x500">
+                    <a href="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png" class="img-wrap"><img src="https://68.media.tumblr.com/28268a2866c1d4c60619bcdf71f53797/tumblr_oim4aaIqe11qczc4to1_1280.png" alt="img02" />
+                        <div class="description description--grid">2016: Fanart of Saber</div>
+                    </a>    
+                </div>                
+                <div class="grid__item" data-size="500x500">
+                    <a href="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png" class="img-wrap"><img src="https://68.media.tumblr.com/1b7e4dd8fbd83b77af9e48cbc50adb14/tumblr_ogyuq4unGS1qczc4to2_1280.png" alt="img02" />
+                        <div class="description description--grid">2016: Original </div>
+                    </a>    
+                </div>  
+                <div class="grid__item" data-size="300x500">
+					<a href="images/d1.png" class="img-wrap"><img src="images/d1.png" alt="img01" />
+						<div class="description description--grid">Rabbit bread and chocolate</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="300x500">
+					<a href="images/d4.png" class="img-wrap"><img src="images/d4.png" alt="img01" />
+						<div class="description description--grid">Chocolate chip cookies</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="300x500">
+					<a href="images/d5.png" class="img-wrap"><img src="images/d5.png" alt="img01" />
+						<div class="description description--grid">Fruit danish</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="300x500">
+					<a href="images/d6.png" class="img-wrap"><img src="images/d6.png" alt="img01" />
+						<div class="description description--grid">Waffles</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="300x500">
+					<a href="images/d2.png" class="img-wrap"><img src="images/d2.png" alt="img02" />
+						<div class="description description--grid">Turtle shaped pie</div>
+					</a>
+				</div>
+				<div class="grid__item" data-size="300x500">
+					<a href="images/d3.png" class="img-wrap"><img src="images/d3.png" alt="img03" />
+						<div class="description description--grid">Bagel, eggs, sausages</div>
+					</a>
+				</div>
+			</div>
+			<!-- /grid -->
+			<div class="preview">
+				<button class="action action--close"><span class="glyphicon glyphicon-remove"></span><span class="text-hidden">Close</span></button>
+				<div class="description description--preview"></div>
+			</div>
+			<!-- /preview -->
+		</div>
+		<!-- /content -->
+	</div>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/masonry.pkgd.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/main.js"></script>
+    <script>
+		(function() {
+			// create SVG circle overlay and append it to the preview element
+			function createCircleOverlay(previewEl) {
+				var dummy = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+				dummy.setAttributeNS(null, 'version', '1.1');
+				dummy.setAttributeNS(null, 'width', '100%');
+				dummy.setAttributeNS(null, 'height', '100%');
+				dummy.setAttributeNS(null, 'class', 'overlay');
+				var g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+				var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+				circle.setAttributeNS(null, 'cx', 0);
+				circle.setAttributeNS(null, 'cy', 0);
+				circle.setAttributeNS(null, 'r', Math.sqrt(Math.pow(previewEl.offsetWidth,2) + Math.pow(previewEl.offsetHeight,2)));
+				dummy.appendChild(g);
+				g.appendChild(circle);
+				previewEl.appendChild(dummy);
+			}
+			
+			new GridFx(document.querySelector('.grid'), {
+				onInit : function(instance) {
+					createCircleOverlay(instance.previewEl);
+				},
+				onResize : function(instance) {
+					instance.previewEl.querySelector('svg circle').setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+				},
+				onOpenItem : function(instance, item) {
+					// item's image
+					var gridImg = item.querySelector('img'),
+						gridImgOffset = gridImg.getBoundingClientRect(),
+						win = {width: document.documentElement.clientWidth, height: window.innerHeight},
+						SVGCircleGroupEl = instance.previewEl.querySelector('svg > g'),
+						SVGCircleEl = SVGCircleGroupEl.querySelector('circle');
+						
+					SVGCircleEl.setAttributeNS(null, 'r', Math.sqrt(Math.pow(instance.previewEl.offsetWidth,2) + Math.pow(instance.previewEl.offsetHeight,2)));
+					// set the transform for the SVG g node. This will animate the circle overlay. The origin of the circle depends on the position of the clicked item.
+					if( gridImgOffset.left + gridImg.offsetWidth/2 < win.width/2 ) {
+						SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(' + win.width + ', ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+					}
+					else {
+						SVGCircleGroupEl.setAttributeNS(null, 'transform', 'translate(0, ' + (gridImgOffset.top + gridImg.offsetHeight/2 < win.height/2 ? win.height : 0) + ')');
+					}
+				}
+			});
+		})();
+	</script>
   </body>
-
-<!--
-<a class="btn btn-warning" href="/#/create/image"><span class="glyphicon glyphicon-plus"></span> Add Image</a>
-<br><br>
--->
-
-<!--
-<div class="img" ng-repeat="image in images | limitTo:-100 | orderBy:'time':true">
-    <a href="{{ image.url }}"><img src="{{ image.url }}"></a>
-    <div class="desc"><b>{{image.title}}</b></div>
-    <center>
-        <a class="col-md-6 col-xs-6" ng-href="/#/image/{{ image._id }}/edit">
-        <span class="glyphicon glyphicon-edit darkred"></span>
-        </a>
-
-        <a class="col-md-6 col-xs-6" ng-href="/#/image/{{ image._id }}/delete">
-        <span class="glyphicon glyphicon-trash darkred"></span>
-        </a>
-    </center>
-</div>
--->
 
 
 
