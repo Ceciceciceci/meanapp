@@ -6,7 +6,7 @@
         p{
             font-family: 'Open Sans Condensed', sans-serif;
         }
-        img {
+        .alice {
             padding-top: 40px;
 /*            padding-left: 40px;*/
              z-index:1;
@@ -23,13 +23,130 @@
             0% { transform: translateY(0); }
             100% { transform: translateY(-30px); }
         }
+
+        .section{
+            400px;
+        }
+
+        .landing{
+          background-color: white;
+        }
+
+        .about{
+        }
     </style>
+
+    <script>
+      // $('p').animate({top: '50px', right: '50px'}, 800);
+    </script>
 </head>
 
 
 <body>
-    <div class="col-md-12 col-xs-12" id="alice">
-         <center><img src="images/alicecookie.gif" alt="Alice Cooking" style="width:400px; height:450px; z-index:100;">
-         <p>All Art (c) Cecilia Tran</p></center>
+    <!--Landing-->
+    <div class="section landing">
+      <div class="col-md-12 col-xs-12" id="alice">
+           <center><img class="alice" src="images/alicecookie.gif" style="width:400px; height:450px; z-index:100;">
+           <p>All Art (c) Cecilia Tran</p></center>
+      </div>
     </div>
+
+    <!--About-->
+    <!-- <div class="section about">
+      <section id="desc">
+          <div class="col-md-3 col-xs-4">
+              <img class="img-circle circle" src="images/me.png" style="width:90%; height:90%;">
+          </div>
+          <div class="container" style="padding-top:30px;">
+              <div class="row col-md-9">
+                  <h3 style="font-family: 'Amatic SC', cursive; font-size: 40px;">About Cecilia</h3>
+                  <hr>
+                  <p>Hello my name is Cecilia Tran.  I am a senior undergrad majoring in software engineering with a focus in web and mobile programming, art and food.<br />
+                  I love playing lots of games and designing which took me into this field. I have a passion for games, animation, puzzles and designing.<br />
+                  Located in San Jose, currently freelancing, I draw, make games, and design new ideas in my free time besides school. <br />
+                  </p>
+              </div>
+              <hr>
+          </div>
+      </section>
+      <br><br>
+      <section id="lang">
+          <div class="col-md-3"></div>
+          <div class="container">
+              <div class="col-md-4">
+                  <strong style="font-family: 'Amatic SC', cursive; font-size:25px;">Languages: </strong><br />
+                  <p> HTML5, CSS3, Javascript (Node.js, Angular.js), Python, MongoDB, Oracle SQL, TCL</p><br /><br />
+                  <p>English, Cantonese Chinese, French, Vietnamese</p><br /><br />
+              </div>
+              <div class="col-md-5">
+                  <strong style="font-family: 'Amatic SC', cursive; font-size:25px;">Work Experience:</strong><br />
+                  <strong>→ </strong>
+                  <p><b>Insane Ink (2012) :</b> Graphic Designer and Web Developer :<br />&nbsp; &nbsp; &nbsp;@ Piedmont Hills High School</p><br />
+
+                  <strong>→ </strong>
+                  <p><b>City of San Jose Fleet and Tech Services(2015 - 2016) :</b> Junior Systems Analyst <br />&nbsp; &nbsp; &nbsp;@ City of San Jose</p>
+                  <br />
+
+                  <strong>→ </strong>
+                  <p><b>CISCO (2016) :</b> Hardware QA Crossfunctional Engineering Intern <br />&nbsp; &nbsp; &nbsp;@ CISCO</p>
+                  <br />
+              </div>
+          </div>
+      </section>
+      <br><br>
+      <section id="icons">
+          <div class="col-md-3"></div>
+          <div class="container">
+              <div class="col-md-6">
+                  <strong style=" font-family: 'Amatic SC', cursive; font-size:25px;">Tools of trade:&nbsp;</strong><br />
+                  <strong>→ </strong>
+                  <span style="line-height: 23.3999996185303px; background-color: initial;"> Windows, Mac, Linux</span><br />
+                  <strong>→ </strong>
+                  <span style="line-height: 23.3999996185303px; background-color: initial;"> Eclipse, Brackets, Git, Netbeans, Unity, Dropbox</span><br />
+                  <span style="line-height: 23.3999996185303px; background-color: initial;">
+                      <strong>→ </strong>&nbsp;Microsoft Word, Excel, Project, Crystal Reports, Oracle SQL Developer</span><br />
+                  <span style="line-height: 23.3999996185303px; background-color: initial;">
+                      <strong>→ </strong> Photoshop CS 6, Paint Tool SAI, After Effects, MAYA, SketchUp</span><br />
+                  <span style="line-height: 23.3999996185303px; background-color: initial;">
+                      <strong>→ </strong> Watercolor, Gouache, Pencil, Pen, Copic markers, Charcoal</span><br /><br />
+              </div>
+          </div>
+              <img class="3" id="cat" src="images/cat.png" style="float: right; height:20%; width:20%;">
+      </section>
+    </div>
+
+    <!-- UX WORK-->
+    <!-- <div class="section ux">
+    </div> -->
+
+    <!--CODING PROJECTS-->
+    <!-- <div class="section coding">
+    </div> -->
+
+    <!--DESIGN AND ILLUSTRATION-->
+    <!-- <div class="section design">
+    </div> -->
+
+    <!--CONTACT ME-->
+    <!-- <div class="section contact">
+      <div class="col-md-12" style="padding-top:20px;">
+          <center>
+          <a href ="https://instagram.com/ichiknees/">
+              <img src="images/instacookie.png" style="width:30%; height:30%; padding-left:15px; padding-top:10px; padding-right: 15px;">
+          </a>
+          <a href ="https://www.linkedin.com/pub/cecilia-tran/98/750/98b">
+              <img src="images/linkincookie.png" style="width:30%; height:30%; padding-left:15px; padding-right: 15px;">
+          </a>
+          </center>
+      </div>
+
+      <div class="col-md-12" style="padding-top:30px;">
+          <center>
+              <p>Contact me by email?</p>
+              <p>cecitran94@gmail.com</p>
+              <p>Cecilia.tran@sjsu.edu</p>
+          </center>
+      </div>
+    </div> -->
+
 </body>
